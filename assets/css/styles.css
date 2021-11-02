@@ -231,13 +231,102 @@ button{
 
 
 /*=============== HOME ===============*/
+.home_content {
+  row-gap: 1rem;
+}
 
+.home_group{
+  display: grid;
+  position: relative;
+  padding-top: 2rem;
+}
 
+.home_img{
+  height: 250px;
+  justify-self: center; 
+}
+
+.home_indicator{
+  width: 8px;
+  height: 8px;
+  background-color: var(--title-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 7rem;
+  right: 2rem; 
+}
+
+.home_indicator::after{
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 48px;
+  background-color: var(--title-color);
+  top: -3rem;
+  right: 45%; 
+}
+
+.home_details-img {
+  position: absolute;
+  right: .5rem;  
+}
+
+.home_details-title,
+.home_details-subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  text-align: right;
+}
+
+.home_subtitle{
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  margin-bottom: var(--mb-1);
+}
+
+.home_title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-black);
+  line-height: 109%;
+  margin-bottom: var(--mb-1);
+}
+
+.home_description {
+  margin-bottom: var(--mb-1);
+}
+
+.home_buttons {
+  display: flex;
+  justify-content: space-between;
+}
 /* Swiper Class */
 
 
 /*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--title-color);
+  padding: 1rem 1.75rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .3s;
+}
 
+.button:hover{
+  background-color: var(--first-color-alt);
+}
+
+.button--ghost {
+  border: 2px solid;
+  background-color: transparent;
+  border-radius: 3rem;
+  padding: .75rem 1.5rem;
+}
+
+.button--ghost:hover{
+  background: none;
+}
 
 /*=============== CATEGORY ===============*/
 
