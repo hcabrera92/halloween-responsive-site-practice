@@ -300,8 +300,28 @@ button{
   justify-content: space-between;
 }
 /* Swiper Class */
+.swiper-pagination{
+  position: initial;
+  margin-top: var(--mb-1);
+}
 
+.swiper-pagination-bullet{
+  width: 5px;
+  height: 5px;
+  background-color: var(--title-color);
+  opacity: 1;
+}
 
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+
+  margin: 0 .5rem;
+}
+
+.swiper-pagination-bullet-active {
+  width: 1.5rem;
+  height: 5px;
+  border-radius: .5rem;
+}
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
@@ -317,6 +337,10 @@ button{
   background-color: var(--first-color-alt);
 }
 
+.button_icon {
+  font-size: 1.25rem;
+}
+
 .button--ghost {
   border: 2px solid;
   background-color: transparent;
@@ -326,6 +350,16 @@ button{
 
 .button--ghost:hover{
   background: none;
+}
+
+.button-link {
+  color: var(--title-color);  
+}
+
+.button-flex{
+  display: inline-flex;
+  align-items: center;
+  column-gap: .5rem; 
 }
 
 /*=============== CATEGORY ===============*/
