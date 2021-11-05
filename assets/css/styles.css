@@ -409,8 +409,65 @@ button{
 }
 
 /*=============== TRICK OR TREAT ===============*/
+.trick_container{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
 
+.trick_content {
+  position: relative;
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 1.5rem 0 1rem 0;
+  text-align: center;
+  overflow: hidden;
+}
 
+.trick_img {
+  width: 90px;
+  transition: .3s;
+}
+
+.trick_subtitle,
+.trick_price {
+  display: block;
+}
+
+.trick_subtitle {
+  font-size: var(--small-font-size);
+  margin-bottom: var(--mb-0-5);
+}
+
+.trick_title,
+.trick_price {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+  font-size: var(--normal-font-size);
+}
+
+.trick_button {
+  display: inline-flex;
+  padding: .5rem; 
+  border-radius: .25rem .25rem .75rem .25rem;
+  position: absolute;
+  right: -3rem;
+  bottom: 0;
+}
+
+.trick_button{
+  font-size: 1.25rem;
+  color: var(--title-color);
+}
+
+.trick_content:hover .trick_img {
+  transform: translateY(-.5rem);
+
+}
+
+.trick_content:hover .trick_button {
+  right: 0; 
+}
 /*=============== DISCOUNT ===============*/
 
 
