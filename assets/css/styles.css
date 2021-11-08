@@ -469,8 +469,25 @@ button{
   right: 0; 
 }
 /*=============== DISCOUNT ===============*/
+.discount_container {
+  background: var(--container-color);
+  border-radius: 1rem;
+  padding: 2.5rem 0 1.5rem;
+  row-gap: .75rem;
+}
 
+.discount_data {
+  text-align: center;
+}
 
+.discount_title{
+  font-size: var(--h2-font-size);
+  margin-bottom: var(--mb-2);
+}
+.discount_img {
+  width: 200px;
+  justify-self: center;
+}
 /*=============== NEW ARRIVALS ===============*/
 
 
